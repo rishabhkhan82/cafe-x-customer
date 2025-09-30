@@ -1,0 +1,193 @@
+<!-- customer/offers.html -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe-X POS - Offers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="./tailwind.config.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-effect { background: rgba(255,255,255,.1); backdrop-filter: blur(10px); border:1px solid rgba(255,255,255,.2) }
+        .dark .glass-effect { background: rgba(0,0,0,.2); border:1px solid rgba(255,255,255,.1) }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) }
+        .dark .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%) }
+        .menu-item-hover { transition: all .3s cubic-bezier(.4,0,.2,1) }
+        .menu-item-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04) }
+        .floating-animation { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300 pb-20">
+    <header class=" sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+        <div class="px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
+                        <div class="relative"><i class="fas fa-coffee text-white text-lg"></i></div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-gray-900 dark:text-white text-lg">Cafe-X POS</h1>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Exclusive offers & coupons</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <i class="fas fa-moon dark:hidden text-sm"></i>
+                        <i class="fas fa-sun hidden dark:inline text-sm"></i>
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-right">
+                            <p class="text-sm font-medium text-gray-900 dark:text-white">Amit Patil</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">Customer</p>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Profile" class="w-10 h-10 rounded-full border-2 border-primary-500 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                            <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white dark:border-gray-900 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="px-4 py-4">
+        <div class="mb-6 animate__animated animate__fadeInUp">
+            <div class="gradient-bg rounded-2xl p-6 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-bold mb-2">Best Offers For You 🎁</h2>
+                    <p class="text-white/90">Apply coupons at checkout and save more.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Promo code box -->
+        <section class="mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-ticket text-primary-500 mr-3"></i>
+                    <input type="text" placeholder="Enter promo code" class="flex-1 bg-transparent outline-none text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400">
+                    <button class="ml-3 px-4 py-2 rounded-xl bg-primary-500 text-white text-sm">Apply</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers list -->
+        <section class="mb-8 animate__animated animate__fadeInUp animate__delay-2s">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Available Coupons</h3>
+            <div class="space-y-3">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm menu-item-hover">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center mr-3">
+                                <i class="fas fa-percent"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 dark:text-white">FLAT100</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Get ₹100 off on orders above ₹499</p>
+                                <p class="text-xs text-gray-400 dark:text-gray-500 mt-1">Valid till: 30 Sep</p>
+                            </div>
+                        </div>
+                        <button class="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs">Apply</button>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm menu-item-hover">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 flex items-center justify-center mr-3">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 dark:text-white">SUPER20</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">20% off up to ₹150 • No code needed</p>
+                                <p class="text-xs text-gray-400 dark:text-gray-500 mt-1">Auto-applied on checkout</p>
+                            </div>
+                        </div>
+                        <button class="px-3 py-1.5 rounded-full bg-primary-500 text-white text-xs">Apply</button>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm menu-item-hover">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center mr-3">
+                                <i class="fas fa-ice-cream"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 dark:text-white">SWEET50</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Flat 50% off on desserts (max ₹100)</p>
+                                <p class="text-xs text-gray-400 dark:text-gray-500 mt-1">Weekends only</p>
+                            </div>
+                        </div>
+                        <button class="px-3 py-1.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Referral -->
+        <section class="mb-8 animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="gradient-bg rounded-2xl p-5 text-white flex items-center justify-between">
+                <div>
+                    <p class="text-sm opacity-90">Invite friends</p>
+                    <p class="text-lg font-semibold">Get ₹150 for every referral</p>
+                    <div class="mt-3 flex items-center bg-white/20 rounded-xl overflow-hidden">
+                        <input class="flex-1 bg-transparent placeholder-white/70 px-3 py-2 text-sm" placeholder="Copy your referral link" value="https://cafex.app/ref/amit" readonly>
+                        <button class="px-3 py-2 bg-white/30 text-white text-sm">Copy</button>
+                    </div>
+                </div>
+                <div class="text-3xl opacity-90"><i class="fas fa-gift"></i></div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 z-50">
+        <div class="flex items-center justify-around py-2">
+            <a href="./dashboard.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="./menu.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors">
+                <i class="fas fa-utensils text-xl"></i>
+                <span class="text-xs font-medium">Menu</span>
+            </a>
+            <a href="./orders.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors relative">
+                <i class="fas fa-receipt text-xl"></i>
+                <span class="text-xs font-medium">Orders</span>
+            </a>
+            <a href="./offers.html" class="flex flex-col items-center space-y-1 p-2 text-primary-500">
+                <i class="fas fa-gift text-xl"></i>
+                <span class="text-xs font-medium">Offers</span>
+            </a>
+            <a href="./profile.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors">
+                <i class="fas fa-user text-xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="fixed bottom-24 right-4 z-40">
+        <button class="w-14 h-14 bg-primary-500 text-white rounded-full shadow-lg hover:bg-primary-600 transition-all duration-300 floating-animation">
+            <i class="fas fa-shopping-cart text-xl"></i>
+        </button>
+    </div>
+
+    <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    html.classList.toggle('dark', currentTheme === 'dark');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+    }
+    </script>
+</body>
+</html>

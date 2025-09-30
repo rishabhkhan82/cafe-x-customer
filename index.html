@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub - Restaurant Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="./tailwind.config.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .dark .glass-effect {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+        }
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .cart-badge {
+            animation: pulse 2s infinite;
+        }
+        .menu-item-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .menu-item-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300 pb-20">
+    <!-- Header -->
+    <header class=" sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+        <div class="px-4 py-3">
+            <div class="flex items-center justify-between">
+            <!-- Cafe-X Logo & Restaurant Info -->
+            <div class="flex items-center space-x-3">
+                <!-- Professional Cafe-X Logo -->
+                <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg">
+                    <div class="relative">
+                        <!-- Coffee cup icon -->
+                        <i class="fas fa-coffee text-white text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-bold text-gray-900 dark:text-white text-lg">Cafe-X POS</h1>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Table 12 • 4.5 ⭐</p>
+                </div>
+            </div>
+                
+                <!-- Actions -->
+                <div class="flex items-center space-x-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
+                        <i class="fas fa-moon dark:hidden text-sm"></i>
+                        <i class="fas fa-sun hidden dark:inline text-sm"></i>
+                    </button>
+                    
+                <!-- User Profile -->
+                <div class="flex items-center space-x-2">
+                    <div class="text-right">
+                        <p class="text-sm font-medium text-gray-900 dark:text-white">Amit Patil</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Customer</p>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" 
+                             alt="Profile" class="w-10 h-10 rounded-full border-2 border-primary-500 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                        <!-- Online status indicator -->
+                        <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white dark:border-gray-900 rounded-full"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-4 py-4">
+        <!-- Welcome Section -->
+        <div class="mb-6 animate__animated animate__fadeInUp">
+            <div class="gradient-bg rounded-2xl p-6 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl font-bold mb-2">Welcome back! 👋</h2>
+                    <p class="text-white/90 mb-4">What delicious food are you craving today?</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-clock text-sm"></i>
+                            <span class="text-sm">25-30 mins</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-truck text-sm"></i>
+                            <span class="text-sm">Free delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="relative">
+                <input type="text" placeholder="Search for dishes, cuisines..." 
+                       class="w-full pl-12 pr-4 py-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <button class="absolute inset-y-0 right-0 pr-4 flex items-center">
+                    <i class="fas fa-filter text-gray-400 hover:text-primary-500 transition-colors"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Categories -->
+        <div class="mb-6 animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="flex space-x-3 overflow-x-auto pb-2">
+                <button class="flex-shrink-0 px-4 py-2 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition-all duration-300">
+                    <i class="fas fa-fire mr-2"></i>Popular
+                </button>
+                <button class="flex-shrink-0 px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-leaf mr-2"></i>Vegetarian
+                </button>
+                <button class="flex-shrink-0 px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-pepper-hot mr-2"></i>Spicy
+                </button>
+                <button class="flex-shrink-0 px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-star mr-2"></i>Top Rated
+                </button>
+                <button class="flex-shrink-0 px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-gift mr-2"></i>Offers
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Categories -->
+        <div class="mb-6 animate__animated animate__fadeInUp animate__delay-3s">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Menu Categories</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer menu-item-hover">
+                    <div class="w-12 h-12 bg-red-100 dark:bg-red-900/30 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-pepper-hot text-red-500 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white text-center">Starters</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-1">12 items</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer menu-item-hover">
+                    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-hamburger text-orange-500 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white text-center">Main Course</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-1">24 items</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer menu-item-hover">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-leaf text-green-500 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white text-center">Salads</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-1">8 items</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer menu-item-hover">
+                    <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-ice-cream text-purple-500 text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white text-center">Desserts</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 text-center mt-1">6 items</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Items -->
+        <div class="mb-6 animate__animated animate__fadeInUp animate__delay-4s">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Featured Items</h3>
+                <button class="text-primary-500 text-sm font-medium">View All</button>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- Menu Item 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 menu-item-hover">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhcHDKHodUP73sbQofmFqGyCRqgBK3_PmA8w&s" 
+                                 alt="Butter Chicken" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Butter Chicken</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Creamy tomato-based curry with tender chicken</p>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-lg font-bold text-primary-500">₹320</span>
+                                        <span class="text-sm text-gray-500 dark:text-gray-400 line-through">₹380</span>
+                                        <span class="text-xs bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-2 py-1 rounded-full">15% off</span>
+                                    </div>
+                                </div>
+                                <button class="w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                                    <i class="fas fa-plus text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 menu-item-hover">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=80&h=80&fit=crop" 
+                                 alt="Biryani" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Hyderabadi Biryani</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Aromatic basmati rice with spiced meat</p>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-lg font-bold text-primary-500">₹280</span>
+                                        <div class="flex items-center space-x-1">
+                                            <i class="fas fa-star text-yellow-400 text-xs"></i>
+                                            <span class="text-xs text-gray-500 dark:text-gray-400">4.8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                                    <i class="fas fa-plus text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 menu-item-hover">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=80&h=80&fit=crop" 
+                                 alt="Pizza" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Margherita Pizza</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Classic tomato, mozzarella, and basil</p>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="text-lg font-bold text-primary-500">₹250</span>
+                                        <span class="text-xs bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-2 py-1 rounded-full">Veg</span>
+                                    </div>
+                                </div>
+                                <button class="w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                                    <i class="fas fa-plus text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular This Week -->
+        <div class="mb-6 animate__animated animate__fadeInUp animate__delay-5s">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Popular This Week</h3>
+                <button class="text-primary-500 text-sm font-medium">View All</button>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 menu-item-hover">
+                    <div class="w-full h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/029/858/402/small/of-tandoori-chicken-as-a-dish-in-a-high-end-restaurant-generative-ai-photo.jpg" 
+                             alt="Tandoori Chicken" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Tandoori Chicken</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Spiced and grilled chicken</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold text-primary-500">₹350</span>
+                        <button class="w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                            <i class="fas fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 menu-item-hover">
+                    <div class="w-full h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=200&h=128&fit=crop" 
+                             alt="Paneer Tikka" class="w-full h-full object-cover">
+                    </div>
+                    <h4 class="font-semibold text-gray-900 dark:text-white mb-1">Paneer Tikka</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Grilled cottage cheese</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-lg font-bold text-primary-500">₹220</span>
+                        <button class="w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+                            <i class="fas fa-plus text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 z-50">
+        <div class="flex items-center justify-around py-2">
+            <a href="./dashboard.html" class="flex flex-col items-center space-y-1 p-2 text-primary-500 hover:text-primary-500 transition-colors">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="./menu.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400">
+                <i class="fas fa-utensils text-xl"></i>
+                <span class="text-xs font-medium">Menu</span>
+            </a>
+            <a href="./orders.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors relative">
+                <i class="fas fa-receipt text-xl"></i>
+                <span class="text-xs font-medium">Orders</span>
+                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+            </a>
+            <a href="./offers.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors">
+                <i class="fas fa-gift text-xl"></i>
+                <span class="text-xs font-medium">Offers</span>
+            </a>
+            <a href="./profile.html" class="flex flex-col items-center space-y-1 p-2 text-gray-400 hover:text-primary-500 transition-colors">
+                <i class="fas fa-user text-xl"></i>
+                <span class="text-xs font-medium">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Floating Cart Button -->
+    <div class="fixed bottom-24 right-4 z-40">
+        <button class="w-14 h-14 bg-primary-500 text-white rounded-full shadow-lg hover:bg-primary-600 transition-all duration-300 floating-animation">
+            <i class="fas fa-shopping-cart text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+<!-- Dark Mode Toggle Script -->
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    html.classList.toggle('dark', currentTheme === 'dark');
+
+    themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        const newTheme = html.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+    });
+
+        // Add click animations to menu items
+        document.querySelectorAll('.menu-item-hover').forEach(item => {
+            item.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-2px)';
+                }, 150);
+            });
+        });
+
+        // Add to cart animation
+        document.querySelectorAll('button[class*="bg-primary-500"]').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+
+        // Smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
