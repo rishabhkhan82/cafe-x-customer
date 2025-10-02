@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ef4444"> 
     <title>Cafe-X POS — Modern Point of Sale for Cafés & Restaurants</title>
     <meta name="description" content="Cafe-X POS is a modern, fast, and delightful point-of-sale and ordering experience built for cafés and restaurants. Take orders, manage menus, track kitchen orders, and get paid—beautifully.">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,7 +47,7 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
     <!-- Top Nav -->
-    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <!-- <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex items-center justify-between py-3">
                 <a href="#home" class="flex items-center space-x-3 group">
@@ -71,6 +72,57 @@
                         Book a live demo
                     </a>
                 </div>
+            </div>
+        </div>
+    </header> -->
+
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-md">
+                        <i class="fas fa-coffee text-white"></i>
+                    </div>
+                    <span class="font-bold text-gray-900 dark:text-white group-hover:text-primary-500 transition-colors">Cafe-X POS</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-6 text-sm">
+                    <a href="#how-it-works" class="text-gray-600 dark:text-gray-300 hover:text-primary-500">How it works</a>
+                    <a href="#features" class="text-gray-600 dark:text-gray-300 hover:text-primary-500">Features</a>
+                    <a href="#pricing" class="text-gray-600 dark:text-gray-300 hover:text-primary-500">Pricing</a>
+                    <a href="#faq" class="text-gray-600 dark:text-gray-300 hover:text-primary-500">FAQ</a>
+                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary-500">Contact</a>
+                </nav>
+                
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon dark:hidden text-xs"></i>
+                        <i class="fas fa-sun hidden dark:inline text-xs"></i>
+                    </button>
+                    <a href="#demo" class="hidden md:inline-flex px-4 py-2 rounded-xl bg-primary-500 text-white text-sm hover:bg-primary-600 transition-colors">
+                        Book a live demo
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-bars text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 dark:border-gray-800 py-4">
+                <nav class="flex flex-col space-y-3">
+                    <a href="#how-it-works" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 py-2">How it works</a>
+                    <a href="#features" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 py-2">Features</a>
+                    <a href="#pricing" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 py-2">Pricing</a>
+                    <a href="#faq" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 py-2">FAQ</a>
+                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 py-2">Contact</a>
+                    <a href="#demo" class="mt-3 inline-flex justify-center px-4 py-2 rounded-xl bg-primary-500 text-white text-sm hover:bg-primary-600 transition-colors">
+                        Book a live demo
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
@@ -246,8 +298,107 @@
         </div>
     </section>
 
+    <!-- Screenshots (desktop + mobile mockups) -->
+    <section id="screenshots" class="relative py-16 md:py-20 bg-white dark:bg-gray-950">
+
+        <div class="max-w-6xl mx-auto px-4 relative">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    See Cafe‑X POS in action
+                </h2>
+                <p class="mt-3 text-gray-600 dark:text-gray-300 md:text-lg">
+                    Responsive by design—beautiful on the counter display and the customer’s phone.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Desktop mockup -->
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl overflow-hidden">
+                    <!-- Browser chrome -->
+                    <div class="flex items-center h-10 px-4 border-b border-gray-200 dark:border-gray-800 bg-gray-50/60 dark:bg-gray-900/60">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                        </div>
+                        <div class="ml-4 flex-1 h-6 rounded-md bg-gray-100 dark:bg-gray-800"></div>
+                    </div>
+                    <!-- Desktop screenshot -->
+                    <div class="bg-gray-100 dark:bg-gray-800">
+                        <!-- Replace src with your DESKTOP screenshot -->
+                        <img src="../assets/images/owner-dashboard.png" alt="Cafe‑X POS desktop screenshot"
+                             class="w-full h-auto object-cover">
+                    </div>
+                    <div class="px-4 py-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 text-center">
+                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                            Owner Dashboard — Orders, KDS status, and sales insights
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mobile mockups (below desktop) -->
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Mobile 1 -->
+                    <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
+                        <div class="pt-5">
+                            <!-- Replace src with your MOBILE screenshot -->
+                            <img src="../assets/images/customer-1.jpg" alt="Cafe‑X POS mobile screenshot 1"
+                                 class="w-full h-auto object-cover">
+                        </div>
+                        <div class="py-3 bg-gray-900">
+                            <div class="mx-auto w-14 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+                        </div>
+                    </div>
+                    <!-- Mobile 2 -->
+                    <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
+                        <div class="pt-5">
+                            <img src="../assets/images/customer-2.jpg" alt="Cafe‑X POS mobile screenshot 2"
+                                 class="w-full h-auto object-cover">
+                        </div>
+                        <div class="py-3 bg-gray-900">
+                            <div class="mx-auto w-14 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+                        </div>
+                    </div>
+                    <!-- Mobile 3 -->
+                    <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
+                        <div class="pt-5">
+                            <img src="../assets/images/customer-3.jpg" alt="Cafe‑X POS mobile screenshot 3"
+                                 class="w-full h-auto object-cover">
+                        </div>
+                        <div class="py-3 bg-gray-900">
+                            <div class="mx-auto w-14 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+                        </div>
+                    </div>
+                    <!-- Mobile 4 -->
+                    <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
+                        <div class="pt-5">
+                            <img src="../assets/images/customer-4.jpg" alt="Cafe‑X POS mobile screenshot 4"
+                                 class="w-full h-auto object-cover">
+                        </div>
+                        <div class="py-3 bg-gray-900">
+                            <div class="mx-auto w-14 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+                        </div>
+                    </div>
+                    <div class="px-4 py-2 text-center">
+                        <p class="text-xs text-gray-700 dark:text-gray-300">Customer Login Page — After QR Code Scan</p>
+                    </div>
+                    <div class="px-4 py-2 text-center">
+                        <p class="text-xs text-gray-700 dark:text-gray-300">Customer Menu — Browse categories & items</p>
+                    </div>
+                    <div class="px-4 py-2 text-center">
+                        <p class="text-xs text-gray-700 dark:text-gray-300">Live Order Status — Preparing → Ready → Delivered</p>
+                    </div>
+                    <div class="px-4 py-2 text-center">
+                        <p class="text-xs text-gray-700 dark:text-gray-300">Customer Profile — Number, Address & Settings</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
     <!-- Features -->
-    <section id="features" class="py-14 md:py-20 bg-white dark:bg-gray-900">
+    <section id="features" class="py-14 md:py-20 bg-transparent dark:bg-gray-900">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
@@ -299,12 +450,12 @@
                 </div>
                 <div class="order-1 md:order-2">
                     <div class="rounded-3xl overflow-hidden shadow-xl">
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=1200&fit=crop" alt="In-service café using Cafe-X POS">
+                        <img class="w-full h-full object-cover" src="https://b.zmtcdn.com/data/pictures/4/21469154/56195946fc271058eaef6fb53570c767_featured_v2.jpg" alt="In-service café using Cafe-X POS">
                     </div>
                     <div class="grid grid-cols-3 gap-4 mt-4">
                         <div class="rounded-2xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&fit=crop" alt="Kitchen display"></div>
                         <div class="rounded-2xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&fit=crop" alt="POS terminal"></div>
-                        <div class="rounded-2xl overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1521017432531-fbd92d1cf0b9?w=600&fit=crop" alt="Menu & offers"></div>
+                        <div class="rounded-2xl overflow-hidden"><img class="w-full h-full object-cover" src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/08/16093502/14082017_Theblackworld_01.jpg" alt="Menu & offers"></div>
                     </div>
                 </div>
             </div>
@@ -312,7 +463,7 @@
     </section>
 
     <!-- CTA Banner -->
-    <section id="demo" class="relative py-14 md:py-20">
+    <section id="demo" class="relative py-14 md:py-20 bg-white dark:bg-gray-950">
         <div class="max-w-6xl mx-auto px-4">
             <div class="gradient-bg rounded-3xl p-8 md:p-12 relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-56 h-56 bg-white/10 rounded-full translate-x-20 -translate-y-20"></div>
@@ -330,55 +481,1255 @@
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-14 md:py-20 bg-white dark:bg-gray-900">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-10">
-                <h2 class="text-2xl md:text-3xl font-extrabold">Simple pricing that scales with you</h2>
-                <p class="text-gray-600 dark:text-gray-300 mt-3">Start small. Grow fast. No hidden fees.</p>
+        <!-- Pricing (Accordion Style) -->
+        <section id="pricing" class="py-16 md:py-20 bg-transparent dark:bg-gray-900">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Simple pricing that scales with you</h2>
+                    <p class="mt-3 text-gray-600 dark:text-gray-300">Start small. Grow fast. No hidden fees.</p>
+                </div>
+    
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Starter Plan -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden">
+                        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                            <div class="text-center">
+                                <p class="text-sm font-semibold text-gray-500 mb-1">Starter</p>
+                                <h3 class="text-3xl font-extrabold">₹0</h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Single outlet • All features to kickstart</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="space-y-3" id="starter-accordion">
+                                <!-- Duration -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                                                <i class="fas fa-clock text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Duration</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">Forever Free</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">No time limits</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Server -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center">
+                                                <i class="fas fa-clock text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Server</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400">Local Server</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">XAMPP server + Your laptop + Your wifi
+                                                </br>
+                                                Works real time, no internet needed
+                                            </br>
+                                            System requirement : 8gb RAM, 250 GB SSD
+                                                </span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Customer -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center">
+                                                <i class="fas fa-users text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Customer</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">6/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">QR code ordering</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu browsing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic profile</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order history</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Offers/Referral/Loyalty points</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Customer feedback</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Unlimited customer</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Owner -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                                                <i class="fas fa-crown text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Owner</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">4/10</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Dashboard overview</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Financial overview</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff Creation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Inventory</span>
+                                                <i class="fas fa-times text-gray-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Settings & config</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Revenue tracking</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Advanced analytics & reports</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple owners</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Manager -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                                                <i class="fas fa-user-tie text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Manager</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">2/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Daily operations</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff creation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff scheduling</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Inventory</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu updates</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Shift reports</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Performance monitoring</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple managers</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Kitchen Manager -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center">
+                                                <i class="fas fa-fire text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Kitchen Manager</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">5/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">KDS (Kitchen Display)</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order queue</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Prep time tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order prioritization</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Quality control</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Recipe management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Food safety checklists</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Kitchen efficiency metrics</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple kitchen managers</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Cashier -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center">
+                                                <i class="fas fa-cash-register text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Cashier</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">6/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">POS terminal</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payment processing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Bill generation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Receipt printing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Tax calculations</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Daily reconciliation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Refund management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payment method tracking</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Mulitple cashiers</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Waiter -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
+                                                <i class="fas fa-concierge-bell text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Waiter</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">2/2</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order taking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order status updates</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Employee -->
+                                <!-- <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 flex items-center justify-center">
+                                                <i class="fas fa-user-friends text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Employee</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">3/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic profiles</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Role assignment</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic access control</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Time tracking</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Performance metrics</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Commission tracking</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Shift management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payroll integration</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+    
+                                <!-- Inventory -->
+                                <!-- <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                                                <i class="fas fa-boxes text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Inventory</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">4/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Stock tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Low stock alerts</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Cost tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Supplier management</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Purchase orders</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Expiry monitoring</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Auto-reorder</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+    
+                                <!-- Analytics & Reports -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center">
+                                                <i class="fas fa-chart-bar text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Analytics & Reports</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">1/10</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Sales reports</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Top-selling items</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Revenue trends</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Customer analytics</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff performance</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Peak hours analysis</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Profit margins</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Custom reports</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Export to Excel/PDF</span>
+                                                <i class="fas fa-times text-gray-400"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Real-time dashboards</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Training -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 flex items-center justify-center">
+                                                <i class="fas fa-graduation-cap text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Training</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">1/1</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Onsite training</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Support -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 flex items-center justify-center">
+                                                <i class="fas fa-headset text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Support</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">4/5</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Email support</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Live chat</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Phone support</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Priority support</span>
+                                                                                                <i class="fas fa-times text-gray-400"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Onsite support</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="#contact" class="mt-6 inline-flex w-full justify-center px-4 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">Start free</a>
+                        </div>
+                    </div>
+    
+                    <!-- Pro Plan -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border-2 border-primary-500 shadow-md relative">
+                        <span class="absolute -top-3 right-4 text-xs bg-primary-500 text-white px-2 py-1 rounded-full">Popular</span>
+                        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                            <div class="text-center">
+                                <p class="text-sm font-semibold text-primary-500 mb-1">Pro</p>
+                                <h3 class="text-3xl font-extrabold">₹999<span class="text-base font-semibold text-gray-500 dark:text-gray-400">/mo</span></h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Advanced features & priority support</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="space-y-3" id="pro-accordion">
+                                <!-- Duration -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                                                <i class="fas fa-clock text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Duration</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">Monthly</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Monthly Basis</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Server -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center">
+                                                <i class="fas fa-clock text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Server</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400">Local Server</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">XAMPP server + Your laptop + Your wifi
+                                                </br>
+                                                Works real time, no internet needed
+                                            </br>
+                                            System requirement : 8gb RAM, 250 GB SSD
+                                                </span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Customer -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 flex items-center justify-center">
+                                                <i class="fas fa-users text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Customer</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">8/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">QR code ordering</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu browsing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic profile</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order history</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Offers/Referral/Loyalty points</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Customer feedback</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Unlimited customer</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Owner -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                                                <i class="fas fa-crown text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Owner</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">10/10</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Dashboard overview</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Financial overview</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff Creation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Inventory</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Settings & config</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Revenue tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Advanced analytics & reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple owners</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Manager -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                                                <i class="fas fa-user-tie text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Manager</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">9/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Daily operations</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff creation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff scheduling</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Inventory</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Menu updates</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Shift reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Performance monitoring</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple managers</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Kitchen Manager -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center">
+                                                <i class="fas fa-fire text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Kitchen Manager</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">9/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">KDS (Kitchen Display)</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order queue</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Prep time tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order prioritization</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Quality control</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Recipe management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Food safety checklists</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Kitchen efficiency metrics</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multiple kitchen managers</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Cashier -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center">
+                                                <i class="fas fa-cash-register text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Cashier</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">9/9</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">POS terminal</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payment processing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Bill generation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Receipt printing</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Tax calculations</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Daily reconciliation</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Refund management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payment method tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Mulitple cashiers</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Waiter -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 flex items-center justify-center">
+                                                <i class="fas fa-concierge-bell text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Waiter</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">2/2</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order taking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Order status updates</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Employee -->
+                                <!-- <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 flex items-center justify-center">
+                                                <i class="fas fa-user-friends text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Employee</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">3/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic profiles</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Role assignment</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic access control</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Time tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Performance metrics</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Commission tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Shift management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Payroll integration</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+    
+                                <!-- Inventory -->
+                                <!-- <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 flex items-center justify-center">
+                                                <i class="fas fa-boxes text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Inventory</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">4/8</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Stock tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Low stock alerts</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Cost tracking</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Basic reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Supplier management</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Purchase orders</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Expiry monitoring</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Auto-reorder</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+    
+                                <!-- Analytics & Reports -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center">
+                                                <i class="fas fa-chart-bar text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Analytics & Reports</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">10/10</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Sales reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Top-selling items</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Revenue trends</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Customer analytics</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Staff performance</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Peak hours analysis</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Profit margins</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Custom reports</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Export to Excel/PDF</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Real-time dashboards</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Training -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 flex items-center justify-center">
+                                                <i class="fas fa-graduation-cap text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Training</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">1/1</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Onsite training</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- Support -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 flex items-center justify-center">
+                                                <i class="fas fa-headset text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">Support</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">5/5</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Email support</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Live chat</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Phone support</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Priority support</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Onsite support</span>
+                                                                                                <i class="fas fa-check text-green-500"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="#contact" class="mt-5 inline-flex w-full justify-center px-4 py-2 rounded-xl bg-primary-500 text-white hover:bg-primary-600">Go Pro</a>
+                        </div>
+                    </div>
+    
+                    <!-- Enterprise Plan -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden">
+                        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                            <div class="text-center">
+                                <p class="text-sm font-semibold text-gray-500 mb-1">Enterprise</p>
+                                <h3 class="text-3xl font-extrabold">Let's talk</h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Redesign & develop as per your cafe/restaurant needs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="space-y-3" id="enterprise-accordion">
+                                <!-- All features enabled -->
+                                <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                                    <button type="button" class="w-full px-4 py-3 flex items-center justify-between text-left group">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                                                <i class="fas fa-crown text-sm"></i>
+                                            </span>
+                                            <span class="font-medium text-gray-900 dark:text-white">All Features</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400">Unlimited</span>
+                                        </div>
+                                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                                    </button>
+                                    <div class="px-4 overflow-hidden transition-all duration-300 max-h-0">
+                                        <div class="pb-4 space-y-2">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Multi outlet</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Online server, Domain + Hosting + SSL</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Custom integrations</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Onsite training</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Dedicated support</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm text-gray-700 dark:text-gray-300">Costing - Reliable, depends upon the level of customization</span>
+                                                <i class="fas fa-check text-green-500"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <a href="#contact" class="mt-6 inline-flex w-full justify-center px-4 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">Contact sales</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 menu-item-hover">
-                    <p class="text-sm font-semibold text-primary-500 mb-1">Starter</p>
-                    <h3 class="text-2xl font-extrabold">₹0</h3>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Local Single Branch • Bring your own device</p>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Menu & Orders</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Kitchen Display</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Basic Reports</li>
-                    </ul>
-                    <a href="#contact" class="mt-5 inline-flex w-full justify-center px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Start free</a>
-                </div>
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border-2 border-primary-500 menu-item-hover relative">
-                    <span class="absolute -top-3 right-4 text-xs bg-primary-500 text-white px-2 py-1 rounded-full">Popular</span>
-                    <p class="text-sm font-semibold text-primary-500 mb-1">Pro</p>
-                    <h3 class="text-2xl font-extrabold">₹999<span class="text-base font-semibold text-gray-500 dark:text-gray-400">/mo</span></h3>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Advanced features & priority support</p>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>All Starter features</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Offers & Loyalty</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Advanced Analytics</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Hardware Add‑ons</li>
-                    </ul>
-                    <a href="#contact" class="mt-5 inline-flex w-full justify-center px-4 py-2 rounded-xl bg-primary-500 text-white hover:bg-primary-600">Go Pro</a>
-                </div>
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 menu-item-hover">
-                    <p class="text-sm font-semibold text-primary-500 mb-1">Enterprise</p>
-                    <h3 class="text-2xl font-extrabold">Let’s talk</h3>
-                    <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Multi‑branch, custom workflows, SLAs</p>
-                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom Integrations</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Role‑based Access</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Onsite Training</li>
-                    </ul>
-                    <a href="#contact" class="mt-5 inline-flex w-full justify-center px-4 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Contact sales</a>
-                </div>
-            </div>
+
+            <!-- Footnote -->
+            <p class="mt-8 text-center text-xs text-gray-500 dark:text-gray-400">
+                All plans include secure data, responsive UI, and local single‑branch support.
+            </p>
         </div>
     </section>
 
        <!-- Customer Success (alternative to testimonials) -->
-       <section class="py-14 md:py-20">
+       <section class="py-14 md:py-20 bg-white dark:bg-gray-950">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-10">
                 <h2 class="text-2xl md:text-3xl font-extrabold">Real results from real cafés</h2>
@@ -472,36 +1823,95 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-14 md:py-20 bg-white dark:bg-gray-900">
+    <!-- FAQ (accordion) -->
+    <section id="faq" class="py-16 md:py-20 bg-transparent dark:bg-gray-900">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-10">
+            <div class="text-center mb-12">
                 <h2 class="text-2xl md:text-3xl font-extrabold">Frequently asked questions</h2>
-                <p class="text-gray-600 dark:text-gray-300 mt-3">Everything you need to know before getting started.</p>
+                <p class="mt-3 text-gray-600 dark:text-gray-300">Everything you need to know before getting started.</p>
             </div>
-            <div class="space-y-4">
-                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5">
-                    <p class="font-semibold text-gray-900 dark:text-white">Does Cafe‑X work offline or locally?</p>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Yes. You can run a single‑branch setup locally on your own server (XAMPP/WAMP). Orders, menu, and billing will work within your network.</p>
+
+            <div class="space-y-3" id="faq-accordion">
+                <!-- Item 1 -->
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 overflow-hidden">
+                    <button type="button" class="w-full px-5 py-4 flex items-center justify-between text-left group">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 flex items-center justify-center">
+                                <i class="fas fa-plug"></i>
+                            </span>
+                            <span class="font-semibold text-gray-900 dark:text-white">Does Cafe‑X work offline or locally?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-5 overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pb-5 pt-0 text-sm text-gray-600 dark:text-gray-300">
+                            Yes. You can run a single‑branch setup locally on your own server (XAMPP/WAMP).
+                            Orders, menu, and billing will work within your local network.
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5">
-                    <p class="font-semibold text-gray-900 dark:text-white">Do I need special hardware?</p>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">No. Any modern browser works. For counters, we recommend a tablet or PC; for KDS, an inexpensive wall‑mounted screen is perfect.</p>
+
+                <!-- Item 2 -->
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 overflow-hidden">
+                    <button type="button" class="w-full px-5 py-4 flex items-center justify-between text-left group">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                                <i class="fas fa-desktop"></i>
+                            </span>
+                            <span class="font-semibold text-gray-900 dark:text-white">Do I need special hardware?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-5 overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pb-5 pt-0 text-sm text-gray-600 dark:text-gray-300">
+                            No. Any modern browser works. For counters, we recommend a tablet or PC;
+                            for KDS, an inexpensive wall‑mounted screen is perfect.
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5">
-                    <p class="font-semibold text-gray-900 dark:text-white">How do customers place orders?</p>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Guests scan a table QR and order from your menu. Orders appear instantly on the KDS and the owner dashboard.</p>
+
+                <!-- Item 3 -->
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 overflow-hidden">
+                    <button type="button" class="w-full px-5 py-4 flex items-center justify-between text-left group">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                                <i class="fas fa-qrcode"></i>
+                            </span>
+                            <span class="font-semibold text-gray-900 dark:text-white">How do customers place orders?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-5 overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pb-5 pt-0 text-sm text-gray-600 dark:text-gray-300">
+                            Guests scan a table QR and order from your live menu. Orders appear instantly
+                            on the KDS and the owner dashboard.
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5">
-                    <p class="font-semibold text-gray-900 dark:text-white">Can I import my existing menu?</p>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Yes. Add categories and items directly or import a CSV. Edits go live immediately.</p>
+
+                <!-- Item 4 -->
+                <div class="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 overflow-hidden">
+                    <button type="button" class="w-full px-5 py-4 flex items-center justify-between text-left group">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                                <i class="fas fa-file-import"></i>
+                            </span>
+                            <span class="font-semibold text-gray-900 dark:text-white">Can I import my existing menu?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-gray-500 group-[.open]:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-5 overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pb-5 pt-0 text-sm text-gray-600 dark:text-gray-300">
+                            Yes. Add categories and items directly or import a CSV. Changes go live immediately for guests.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-14 md:py-20">
+    <section id="contact" class="py-14 md:py-20 bg-white dark:bg-gray-950">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8 items-start">
                 <div>
@@ -512,6 +1922,45 @@
                         <div class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i><span>Works with your existing devices</span></div>
                         <div class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i><span>Local single‑branch friendly</span></div>
                     </div>
+                                    <!-- Contact details -->
+                <div class="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
+                    <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+                        <div class="w-9 h-9 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 flex items-center justify-center">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">Phone</p>
+                            <a href="tel:+919876543210" class="mt-0.5 inline-block font-medium text-gray-900 dark:text-white hover:text-primary-500">
+                                +91 98765 43210
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4">
+                        <div class="w-9 h-9 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 flex items-center justify-center">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">Email</p>
+                            <a href="mailto:hello@cafexpos.com" class="mt-0.5 inline-block font-medium text-gray-900 dark:text-white hover:text-primary-500">
+                                hello@cafexpos.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 sm:col-span-1">
+                        <div class="w-9 h-9 rounded-lg bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">Address</p>
+                            <p class="mt-0.5 font-medium text-gray-900 dark:text-white">
+                                12, Jaitala Road, Nagpur,<br>
+                                Maharashtra, 440022
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <form class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -599,6 +2048,133 @@
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
     </script>
+<script>
+    (function () {
+        const container = document.getElementById('faq-accordion');
+        if (!container) return;
+    
+        const items = Array.from(container.children); // instead of querySelectorAll('> div')
+    
+        items.forEach((item) => {
+            const button = item.querySelector('button');
+            const panel = item.querySelector('button + div'); // panel directly after button
+            if (!button || !panel) return;
+    
+            item.classList.remove('open');
+            panel.style.maxHeight = '0px';
+    
+            button.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+    
+                // close others
+                items.forEach((it) => {
+                    it.classList.remove('open');
+                    const p = it.querySelector('button + div');
+                    if (p) p.style.maxHeight = '0px';
+                });
+    
+                // open current
+                if (!isOpen) {
+                    item.classList.add('open');
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            });
+        });
+    
+        window.addEventListener('resize', () => {
+            const openItem = container.querySelector('.open');
+            if (!openItem) return;
+            const openPanel = openItem.querySelector('button + div');
+            if (openPanel) openPanel.style.maxHeight = openPanel.scrollHeight + 'px';
+        });
+    })();
+    </script>
+        <!-- Accordion Script -->
+        <script>
+            // Enhanced accordion functionality for pricing
+            (function () {
+                const accordionContainers = ['starter-accordion', 'pro-accordion', 'enterprise-accordion'];
+                
+                accordionContainers.forEach(containerId => {
+                    const container = document.getElementById(containerId);
+                    if (!container) return;
+        
+                    const items = Array.from(container.children);
+        
+                    items.forEach((item) => {
+                        const button = item.querySelector('button');
+                        const panel = item.querySelector('button + div');
+                        if (!button || !panel) return;
+        
+                        // Initialize closed
+                        item.classList.remove('open');
+                        panel.style.maxHeight = '0px';
+        
+                        button.addEventListener('click', () => {
+                            const isOpen = item.classList.contains('open');
+        
+                            // Close all others in this container
+                            items.forEach((it) => {
+                                it.classList.remove('open');
+                                const p = it.querySelector('button + div');
+                                if (p) p.style.maxHeight = '0px';
+                            });
+        
+                            // Toggle current
+                            if (!isOpen) {
+                                item.classList.add('open');
+                                panel.style.maxHeight = panel.scrollHeight + 'px';
+                            }
+                        });
+                    });
+        
+                    // Recompute on resize
+                    window.addEventListener('resize', () => {
+                        const openItem = container.querySelector('.open');
+                        if (!openItem) return;
+                        const openPanel = openItem.querySelector('button + div');
+                        if (openPanel) openPanel.style.maxHeight = openPanel.scrollHeight + 'px';
+                    });
+                });
+            })();
+            </script>
+            
+    <!-- Add this script before the closing body tag -->
+    <script>
+        // Mobile menu toggle
+        (function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const toggleIcon = mobileMenuToggle.querySelector('i');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        toggleIcon.classList.remove('fa-bars');
+                        toggleIcon.classList.add('fa-times');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        toggleIcon.classList.remove('fa-times');
+                        toggleIcon.classList.add('fa-bars');
+                    }
+                });
+                
+                // Close mobile menu when clicking on links
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        toggleIcon.classList.remove('fa-times');
+                        toggleIcon.classList.add('fa-bars');
+                    });
+                });
+            }
+        })();
+        </script>
+        
 
 </body>
 </html>
