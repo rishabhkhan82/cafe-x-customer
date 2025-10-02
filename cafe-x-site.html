@@ -159,13 +159,13 @@
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl shine">
                             <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1200&fit=crop" alt="Cafe-X POS preview">
                         </div>
-                        <div class="absolute -bottom-6 -left-6 w-36 h-36 rounded-3xl bg-white/15 border border-white/20 backdrop-blur-md hidden md:flex items-center justify-center text-white text-center text-xs p-4">
+                        <div class="absolute -bottom-6 -left-2 md:-left-6 w-36 h-36 rounded-3xl bg-white/15 border border-white/20 backdrop-blur-md md:flex items-center justify-center text-white text-center text-xs p-4">
                             <div>
                                 <i class="fas fa-qrcode text-2xl mb-2"></i>
                                 <p>Table QR ordering, synced to Kitchen Display</p>
                             </div>
                         </div>
-                        <div class="absolute -top-6 -right-6 w-36 h-36 rounded-3xl bg-white/15 border border-white/20 backdrop-blur-md hidden md:flex items-center justify-center text-white text-center text-xs p-4">
+                        <div class="absolute -top-6 -right-2 md:-right-6 w-36 h-36 rounded-3xl bg-white/15 border border-white/20 backdrop-blur-md md:flex items-center justify-center text-white text-center text-xs p-4">
                             <div>
                                 <i class="fas fa-chart-line text-2xl mb-2"></i>
                                 <p>Realtime sales & item performance insights</p>
@@ -326,7 +326,7 @@
                     <!-- Desktop screenshot -->
                     <div class="bg-gray-100 dark:bg-gray-800">
                         <!-- Replace src with your DESKTOP screenshot -->
-                        <img src="../assets/images/owner-dashboard.png" alt="Cafe‑X POS desktop screenshot"
+                        <img src="./assets/images/owner-dashboard.png" alt="Cafe‑X POS desktop screenshot"
                              class="w-full h-auto object-cover">
                     </div>
                     <div class="px-4 py-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 text-center">
@@ -342,7 +342,7 @@
                     <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
                         <div class="pt-5">
                             <!-- Replace src with your MOBILE screenshot -->
-                            <img src="../assets/images/customer-1.jpg" alt="Cafe‑X POS mobile screenshot 1"
+                            <img src="./assets/images/customer-1.jpg" alt="Cafe‑X POS mobile screenshot 1"
                                  class="w-full h-auto object-cover">
                         </div>
                         <div class="py-3 bg-gray-900">
@@ -352,7 +352,7 @@
                     <!-- Mobile 2 -->
                     <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
                         <div class="pt-5">
-                            <img src="../assets/images/customer-2.jpg" alt="Cafe‑X POS mobile screenshot 2"
+                            <img src="./assets/images/customer-2.jpg" alt="Cafe‑X POS mobile screenshot 2"
                                  class="w-full h-auto object-cover">
                         </div>
                         <div class="py-3 bg-gray-900">
@@ -362,7 +362,7 @@
                     <!-- Mobile 3 -->
                     <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
                         <div class="pt-5">
-                            <img src="../assets/images/customer-3.jpg" alt="Cafe‑X POS mobile screenshot 3"
+                            <img src="./assets/images/customer-3.jpg" alt="Cafe‑X POS mobile screenshot 3"
                                  class="w-full h-auto object-cover">
                         </div>
                         <div class="py-3 bg-gray-900">
@@ -372,7 +372,7 @@
                     <!-- Mobile 4 -->
                     <div class="rounded-[2rem] border border-gray-200 dark:border-gray-800 bg-gray-900 shadow-lg overflow-hidden">
                         <div class="pt-5">
-                            <img src="../assets/images/customer-4.jpg" alt="Cafe‑X POS mobile screenshot 4"
+                            <img src="./assets/images/customer-4.jpg" alt="Cafe‑X POS mobile screenshot 4"
                                  class="w-full h-auto object-cover">
                         </div>
                         <div class="py-3 bg-gray-900">
@@ -2036,7 +2036,7 @@
     <script>
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     html.classList.toggle('dark', currentTheme === 'dark');
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
